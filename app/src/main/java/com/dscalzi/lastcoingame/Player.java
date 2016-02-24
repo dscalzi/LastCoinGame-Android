@@ -1,9 +1,6 @@
 package com.dscalzi.lastcoingame;
 
-/**
- * Created by Daniel on 2/21/2016.
- */
-public class Player extends User{
+public class Player implements User{
 
     private CoinGame game;
 

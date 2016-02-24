@@ -1,6 +1,6 @@
 package com.dscalzi.lastcoingame;
 
-public class AI extends User{
+public class AI implements User{
 
     private int difficulty; //0 Easy | 1 Medium | 2 Hard
     private CoinGame game;
