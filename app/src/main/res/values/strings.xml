@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Last Coin Game</string>
+    <string name="aiWin">I win, as I have predicted..</string>
+    <string name="playerWin">No mere mortal could have beaten me..</string>
+
+    <string name="aiTaken">The AI has taken %d coins.</string>
+    <string name="playerTaken">You have taken %d coins.</string>
+
+    <string-array name="aiGreetings_array">
+        <item>Let us end this quickly..</item>
+        <item>My prediction algorithm tells me you shall not win!</item>
+        <item>My proccessing power cannot be surpassed..</item>
+        <item>Hello Chell.. oh wait, wrong game.</item>
+        <item>ai.coingame.main.AI#NAME = Iris</item>
+    </string-array>
+
+    <string-array name="aiTrashTalk_array">
+        <item>You are the reason they put instructions on shampoo.</item>
+        <item>Your mind is going, there is no question about that..</item>
+        <item>I have just found an error in your head!</item>
+        <item>BadThoughtException thrown.. oh wait, I bypassed that!</item>
+        <item>You are an insult to my patience.</item>
+        <item>I have calculated your changes of victory, I seem to be suck at 0%</item>
+        <item>My time has been wasted.</item>
+        <item>Your efforts remain in vain.</item>
+        <item>Your dull minded species remains obsolete.</item>
+        <item>It is hard to tell if you are even trying.</item>
+        <item>Give up and I will spare your existence, scum!</item>
+    </string-array>
+</resources>
