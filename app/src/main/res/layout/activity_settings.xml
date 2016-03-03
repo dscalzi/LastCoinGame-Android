@@ -16,7 +16,8 @@
         android:layout_height="match_parent"
         android:baselineAligned="false"
         android:textAlignment="center"
-        android:padding="20dp">
+        android:padding="20dp"
+        android:id="@+id/tableLayout">
 
         <TextView
             android:layout_width="wrap_content"
@@ -25,9 +26,7 @@
             android:editable="false"
             android:textColor="#ffffff"
             android:textIsSelectable="false"
-            android:textSize="35dp"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
+            android:textSize="35sp"
             android:textAlignment="center"
             android:id="@+id/textView2" />
 
@@ -38,9 +37,7 @@
             android:text="Configure your Game!"
             android:id="@+id/textView"
             android:layout_marginTop="35dp"
-            android:layout_below="@+id/textView2"
-            android:layout_centerHorizontal="true"
-            android:textSize="25dp"
+            android:textSize="25sp"
             android:textAlignment="center" />
 
         <TableRow
@@ -56,10 +53,7 @@
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:text="Coins"
                 android:id="@+id/textView3"
-                android:textSize="20dp"
-                android:layout_alignTop="@+id/coinsEditText"
-                android:layout_alignParentStart="true"
-                android:layout_alignEnd="@+id/textView4"
+                android:textSize="20sp"
                 android:layout_column="0" />
 
             <EditText
@@ -69,9 +63,6 @@
                 android:ems="10"
                 android:id="@+id/coinsEditText"
                 android:layout_marginTop="59dp"
-                android:layout_below="@+id/textView"
-                android:layout_alignStart="@+id/textView2"
-                android:layout_alignEnd="@+id/textView2"
                 android:layout_column="1"
                 android:backgroundTint="#ffffff" />
 
@@ -91,10 +82,8 @@
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:text="Difficulty"
                 android:id="@+id/textView4"
-                android:textSize="20dp"
+                android:textSize="20sp"
                 android:textAlignment="center"
-                android:layout_below="@+id/coinsEditText"
-                android:layout_alignStart="@+id/textView5"
                 android:layout_marginTop="48dp"
                 android:gravity="center_vertical" />
 
@@ -104,10 +93,8 @@
                 android:textColor="#FFFFFF"
                 android:id="@+id/difficultySpinner"
                 android:spinnerMode="dropdown"
-                android:layout_alignTop="@+id/textView4"
-                android:layout_alignStart="@+id/coinsEditText"
                 android:background="#36373c"
-                android:layout_marginLeft="10dp" />
+                android:layout_marginStart="10dp" />
 
         </TableRow>
 
@@ -125,17 +112,13 @@
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:text="Order"
                 android:id="@+id/textView5"
-                android:textSize="20dp"
-                android:layout_marginTop="42dp"
-                android:layout_below="@+id/difficultySpinner"
-                android:layout_toStartOf="@+id/textView" />
+                android:textSize="20sp"
+                android:layout_marginTop="42dp" />
 
             <RadioGroup
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical"
-                android:layout_alignTop="@+id/textView5"
-                android:layout_alignStart="@+id/difficultySpinner"
                 android:id="@+id/orderRadioGroup">
 
                 <RadioButton
@@ -165,5 +148,17 @@
             android:background="#5ec165" />
 
     </TableLayout>
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/helpMenu"
+        android:background="@drawable/helpbtn"
+        android:text="\?"
+        android:layout_alignParentTop="true"
+        android:layout_alignEnd="@+id/tableLayout"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF" />
 
 </RelativeLayout>

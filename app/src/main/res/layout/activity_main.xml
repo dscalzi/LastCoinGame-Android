@@ -9,12 +9,7 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.dscalzi.lastcoingame.SettingsActivity"
     android:background="#626262"
-    android:textAlignment="center"><![CDATA[>
-
-
-
-
-    ]]>
+    android:textAlignment="center">
 
     <Button
         android:layout_width="wrap_content"
@@ -41,7 +36,7 @@
         android:layout_above="@+id/btnTakeTwo"
         android:layout_centerHorizontal="true"
         android:textColor="#ffffff"
-        android:textSize="20dp" />
+        android:textSize="20sp" />
 
     <Button
         style="?android:attr/buttonStyleSmall"
@@ -70,7 +65,7 @@
         android:text="Coins Left"
         android:id="@+id/textView7"
         android:textColor="#ffffff"
-        android:textSize="30dp"
+        android:textSize="30sp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
 

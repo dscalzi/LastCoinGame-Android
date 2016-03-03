@@ -27,4 +27,8 @@
         <item>It is hard to tell if you are even trying.</item>
         <item>Give up and I will spare your existence, scum!</item>
     </string-array>
+
+    <string name="title_activity_help">How to Play</string>
+    <string name="dummy_button">I\'m ready to play!</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
 </resources>
