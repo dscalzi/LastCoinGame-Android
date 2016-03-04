@@ -64,7 +64,8 @@
                 android:id="@+id/coinsEditText"
                 android:layout_marginTop="59dp"
                 android:layout_column="1"
-                android:backgroundTint="#ffffff" />
+                android:backgroundTint="#ffffff"
+                android:text="23" />
 
         </TableRow>
 
@@ -153,12 +154,12 @@
         style="?android:attr/buttonStyleSmall"
         android:layout_width="30dp"
         android:layout_height="30dp"
-        android:id="@+id/helpMenu"
+        android:id="@+id/btnHelpMenu"
         android:background="@drawable/helpbtn"
         android:text="\?"
         android:layout_alignParentTop="true"
         android:layout_alignEnd="@+id/tableLayout"
         android:textSize="20sp"
-        android:textColor="#FFFFFF" />
+        android:textColor="@drawable/helpbtntxt" />
 
 </RelativeLayout>

@@ -26,8 +26,9 @@ public class SettingsActivity extends AppCompatActivity {
     private EditText numCoins;
     private Spinner difficulty;
     private RadioGroup radioGroup;
+    private Button helpButton;
 
-    private volatile boolean validCoins = false;
+    private volatile boolean validCoins = true;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,7 +38,10 @@ public class SettingsActivity extends AppCompatActivity {
         this.numCoins = (EditText) findViewById(R.id.coinsEditText);
         this.difficulty = (Spinner) findViewById(R.id.difficultySpinner);
         this.radioGroup = (RadioGroup) findViewById(R.id.orderRadioGroup);
+        this.helpButton = (Button) findViewById(R.id.btnHelpMenu);
         Button startBtn = (Button) findViewById(R.id.startGameBtn);
+
+        numCoins.setSelection(2);
 
         List<Map<String, String>> items = new ArrayList<>();
 
@@ -108,7 +112,6 @@ public class SettingsActivity extends AppCompatActivity {
             public void onTextChanged(CharSequence s, int start, int before, int count) {
             }
         });
-
 
         //Setup button click event
         startBtn.setOnClickListener(new View.OnClickListener() {
