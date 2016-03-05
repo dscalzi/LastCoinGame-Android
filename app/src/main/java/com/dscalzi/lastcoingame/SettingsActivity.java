@@ -3,6 +3,7 @@ package com.dscalzi.lastcoingame;
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.PorterDuff;
+import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.Editable;
@@ -113,6 +114,14 @@ public class SettingsActivity extends AppCompatActivity {
             }
         });
 
+        helpButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view){
+                Intent myIntent = new Intent(SettingsActivity.this, HelpActivity.class);
+                SettingsActivity.this.startActivity(myIntent);
+            }
+        });
+
         //Setup button click event
         startBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -127,8 +136,12 @@ public class SettingsActivity extends AppCompatActivity {
                     myIntent.putExtra("cgtotal", coins);
                     myIntent.putExtra("cgdiff", diff);
                     myIntent.putExtra("cgfirst", first);
+                    finish();
                     SettingsActivity.this.startActivity(myIntent);
 
+                } else {
+                    Snackbar.make(view, "You can only play with 1-5000 coins.", Snackbar.LENGTH_LONG)
+                            .setAction("Action", null).show();
                 }
             }
         });
